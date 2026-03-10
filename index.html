@@ -2,7 +2,14 @@
 <html lang="ru">
 <head>
     
-<script id="_wauldo">var _wau = _wau || []; _wau.push(["dynamic", "hwqjlz0chz", "ldo", "c4302bffffff", "small"]);</script><script async src="//waust.at/d.js"></script>
+<p>Попалось: <span id="visits">...</span> раз</p>
+
+<script>
+function cb(response) {
+    document.getElementById('visits').innerText = response.value;
+}
+</script>
+<script async src="https://api.countapi.xyz/hit/mysite.com/visits?callback=cb"></script>
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
